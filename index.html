@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <?php
+     include 'connect.php';
+     include 'appointment.php';
+     ?>
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container container">
+             <div class="header-main">
+
+                 <div class="left-head">
+                     <i  class="far fa-clock">Mon-Sun 8:00 am to 7:00pm</i>
+                     <i  class="fas fa-phone-alt"> +91 99999999</i>
+                     <i  class="far fa-envelope"> care@femcarefertility.com</i>
+                     <i  class="fas fa-map-marker-alt"> Location</i>
+                     
+                     
+                     
+                     
+                    </div>
+                    <div class="right-head">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-dribbble"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+        <nav class="navbar">
+            <div class="navbar-container container">
+                      
+
+                           <input type="checkbox">
+                           <div class="hamburger-lines">
+                               <span class="line line1">
+                                   
+                            </span>
+                            <span class="line line2">
+                                
+                            </span>
+                            <span class="line line3">
+                                
+                            </span>
+                        </div>
+                    
+                        
+                        
+                        <div class="navbar-main">
+                            <div class="left-navbar">
+                                <div class="logo">
+                                    <img src="./img/websitelogo.png " alt="Logo" >
+                                </div>
+                                <div class="text-navbar">
+                                    <h1>Femcare Fertility</h1>
+                                    <p> Fertility and women care center</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="right-navbar">
+                            
+                                
+                                <ul class="nav-list">
+                                    <li><a class="list" href="#showcase">Home</a></li>
+                                    <li><a class="list" href="#about-nav">About</a></li>
+                                    <li><a class="list" href="#testimonial-nav">Testimonial</a></li>
+                                    <li><a class="list" href="#contact-nav">Contact</a></li>
+                                </ul>
+                          
+                        
+                            <div class="appointment">
+                                <a class="btn " href="#appoint">Book Appointment</a>
+                            </div>
+                        </div>
+                        
+                        
+                    
+                    </div>
+                    
+            </nav>
+            
+            <!-- _____________________________heroSec_____________________ -->
+            <section class="showcase">
+                <div class="show-container container">
+                    <div class="form-container">
+                        <form action="index.php" method="post">
+                            <div class="label-class">
+                                <label for="name">Name</label>
+                                <div class="input-container">
+
+                                    <input type="text" class="input" id="name" placeholder="Enter-Name" name="name" required>
+                                </div>
+                            </div>
+                            <div class="label-class">
+                                <label for="email">Email</label>
+                                <div class="input-container">
+
+                                    <input type="email" class="input" id="Email" placeholder="Enter-Email" name="email" required>
+                                </div>
+
+                            </div>
+                            <div class="label-class">
+                                
+                                <div class="input-container">
+
+                                   <button class="btn-primary" type="submit">Submit</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- _____________________about______________ -->
+            <section class="about ">
+                <div class="about-main">
+                    <p>
+                        Femcare Fertility is determined to provide affordable yet high-quality 
+                        infertility solutions to people. It is equipped with state-of-the-art 
+                        infrastructure, advanced equipment, and expert doctors. It is a one-stop 
+                        solution for all reproductive and fertility-related issues.
+                    </p>
+                </div>
+
+                <div class="about-container container">
+                    <div class="about-item">
+                        <div class="about-image">
+                            <img src="../img/PersonalizedTreatment.jpg" alt="Image">
+                        </div>
+                        <div class="about-description">
+                            <p>Personalized approach 
+                                to treat complex 
+                                problems.</p>
+    
+                        </div>
+                    </div>
+    
+                    <div class="about-item">
+                        <div class="about-image">
+                            <img src="../img/ExperiencedDoctors.jpg" alt="Image">
+                        </div>
+                        <div class="about-description">
+                            <p>Expert team of Fertility 
+                                Specialist, Embryologist 
+                                & Counsellor. 
+                                </p>
+    
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-image">
+                            <img src="../img/WorldClassLabs.jpg" alt="Image">
+                        </div>
+                        <div class="about-description">
+                            <p>World class labs and 
+                                technical advansment. 
+                                </p>
+    
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-image">
+                            <img src="../img/AffordablePricing.jpg" alt="Image">
+                        </div>
+                        <div class="about-description">
+                            <p>Affordable pricing</p>
+    
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+<!--                       testimonal                     -->
+            <section class="testimonials" id="testimonial-nav">
+                <h2 class="testimonial-title">What your Customers Says</h2>
+                <div class="testimonial-container container">
+                    <div class="testimonial-box">
+                        <div class="star-rating">
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+            
+                        </div>
+                        <p class="testimonial-text">IVF is a procedure in which 
+                            the woman's eggs are 
+                            fertilized with the man's 
+                            sperm in a laboratory. 
+                            Formed embryos are then 
+                            transferred into the uterus 
+                            for pregnancy</p>
+                        <div class="customer-detail">
+                            <div class="customer-photo"><img src="../img/male-photo1.jpg" alt="photo"></div>
+                            <p class="customer-name">John Doe</p>
+                        </div>
+                    </div>
+            
+                    <div class="testimonial-box">
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="testimonial-text">IVF is a procedure in which 
+                            the woman's eggs are 
+                            fertilized with the man's 
+                            sperm in a laboratory. 
+                            Formed embryos are then 
+                            transferred into the uterus 
+                            for pregnancy.</p>
+                        <div class="customer-detail">
+                            <div class="customer-photo"><img src="../img/male-photo2.jpg" alt="photo"></div>
+                            <p class="customer-name">Jay Doe </p>
+                        </div>
+                    </div>
+            
+                    <div class="testimonial-box">
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="testimonial-text">IVF is a procedure in which 
+                            the woman's eggs are 
+                            fertilized with the man's 
+                            sperm in a laboratory. 
+                            Formed embryos are then 
+                            transferred into the uterus 
+                            for pregnancy.</p>
+                        <div class="customer-detail">
+                            <div class="customer-photo"><img src="../img/male-photo3.jpg" alt="photo"></div>
+                            <p class="customer-name">Jolly Doe </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ________________appointment____________ -->
+            <section class="appointment" id="appoint" >
+                <div class="appointment-container container">
+                    <div class="form-appointment">
+                       
+                        <form action="index.php" method="post">
+                            <div class="appointment-header">
+                                <h2>Book Appointment</h2>
+                            </div>
+                            
+                            <div class="appointment-class">
+                                
+                                <div class="input-appointment">
+
+                                    <input type="text" class="input" id="name" placeholder="Enter Full Name" name="name" required>
+                                </div>
+                            </div>
+
+                            <div class="appointment-class">
+                              
+                                <div class="input-appointment">
+
+                                    <input type="tel" class="input"  placeholder="+91" name="mobileNumber" required>
+                                </div>
+                            </div>
+
+                            <div class="appointment-class">
+                               
+                                <div class="input-appointment">
+
+                                    <input type="email" class="input" id="Email" placeholder="Enter Email" name="email" required>
+                                </div>
+
+                            </div>
+
+                            <div class="appointment-class">
+                               
+                                <div class="input-appointment">
+
+                                    <input type="datetime-local" class="input"  name="datetime" required>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="appointment-class">
+                                
+                                <div class="input-appointment">
+
+                                   <button class="btn-primary" type="submit">Submit</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                
+            </section>
+
+
+            <!-- -______________________footer____________________ -->
+
+            <footer class="footer">
+                <div class="footer-logo">
+                    <div>
+        
+                        <img src="../img/new_hd_logo.png" alt="Logo">
+                    </div>
+                    <div class="footer-elements">
+        
+                        <h1>Femcare Fertility </h1>
+                        <p>
+                            Fertility and women care center
+                        </p>
+                    </div>
+                    
+           
+                </div>
+                <hr>
+                <h2>Femcare Fertility &copy; all Rights reserved.</h2>
+            </footer>
+        </body>
+
+</html>
+

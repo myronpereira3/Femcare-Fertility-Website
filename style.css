@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Fira+Sans:wght@300&family=Montserrat:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+     font-family: 'Poppins', sans-serif;;
+}
+
+/* _____________utility class_________________ */
+.container{
+    /* border: 2px solid rgb(255, 0, 0); */
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+/* ---------------header--------- */
+.header{
+    background: rgb(12 109 109);
+}
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+    
+    color: #fff;
+}
+
+.header .left-head i{
+ padding: 0 1.2rem;
+ font-size: 1.1rem;
+ cursor: pointer;
+}
+
+.header .right-head i{
+    padding: 0 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar-container {
+    position: relative;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.hamburger-lines{
+    display: none;
+}
+
+.navbar-main{
+    
+    width: 45%;
+   
+   
+}
+
+.left-navbar{
+    position: relative;
+  display: flex;
+  align-items: center;
+
+}
+
+
+.logo img{
+    display: inline-block;
+       width: 125px;
+       height: 107px
+}
+
+.text-navbar{
+    position: absolute;
+    left: 105px;
+}
+.text-navbar h1{
+    white-space: nowrap;
+    font-size: 3rem;
+}
+
+.text-navbar p{
+    font-size: 1.5rem;
+}
+
+.right-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+   
+    
+}
+.nav-list .list{
+    text-decoration: none;
+    font-weight:500 ;
+    font-size: 1.6rem;
+    padding: 0 3rem 0 0 ;
+}
+
+.btn{
+    font-size: 1.4rem;
+    display: inline-block;
+    padding:1.4em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+  margin-right: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    background: #e91e63;
+    
+
+
+}
+.appointment a{
+    
+    white-space: nowrap;
+}
+.nav-list a{
+    color: #444;
+}
+
+.nav-list a:hover{
+    color:#117964;
+}
+
+.appointment a:hover{
+    background: white;
+    color: #e91e63;
+    border: 2px solid #e91e63;
+}
+
+/* _____________hero section__________ */
+
+.showcase{
+    /* border: 2px solid green; */
+    background-image:url(../img/showcaseimg.jpg) ;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.show-container{
+    height: 65vh;
+}
+
+.form-container{
+    /* border:2px solid rgb(102, 255, 0); */
+    border: 4px solid #e91e63;
+    border-radius: 16px;
+    
+    width: 50%;
+    height: 100%;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.form-container label{
+    font-weight: 500;
+    font-size: 2rem;
+
+}
+
+.form-container input{
+    padding: 0.6rem 2.5rem;
+    outline: none;
+}
+
+.label-class{
+    margin-bottom: 2rem;
+}
+.btn-primary{
+    font-size: 1.4rem;
+    display: inline-block;
+    padding:1.1em 2.3em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    background: #e91e63;
+}
+
+/* ---------------------------about_____________ */
+
+.about-main{
+    margin: 3rem 6rem;
+
+}
+.about-main p{
+    font-size: 2.0rem;
+    color: #fff;
+    background: rgba(130,122, 119);
+    padding: 2rem;
+   
+}
+
+.about-container{
+
+   
+   
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 30px 0px;
+}
+
+.about-container img{
+
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius:50% ;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-item{
+    display: flex;
+    flex: 1 1 500px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.about-description{
+    margin: auto 1.5rem;
+    font-size:1.4rem;
+    color: #555;
+    font-weight: 500;
+}
+
+/* --------------------testimonila__________ */
+.testimonials{
+    
+    padding: 5rem 0rem;
+    background: rgb(243,243,243);
+}
+
+.testimonial-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 1.rem;
+}
+
+.testimonial-container .checked{
+    color: #ff9529;
+}
+
+.testimonial-box .testimonial-text{
+    margin: 1rem 0;
+    color: #444;
+}
+
+.testimonial-box{
+    text-align: center;
+    padding: 1rem;
+}
+
+.customer-photo img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+/* ___________appointment______________ */
+
+.appointment-container{
+    height: 70vh;
+   background:  #f1ebeb;
+
+}
+/* .form-container form{
+    margin: auto;
+} */
+.form-appointment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.form-appointment .input{
+    padding: 1rem 4rem;
+    outline: none;
+}
+
+.appointment-class{
+    margin: 2rem 0rem;
+}
+.appointment-header h2{
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #444;
+    margin-right: 3rem;
+}
+.appointment-class button{
+    margin-left: 3.7rem;
+}
+/* -_________________________footer___________________ */
+
+.footer{
+    background: rgb(12 109 109);
+}
+.footer-logo{
+    display: flex;
+}
+.footer-logo img{
+    width: 148px;
+    height: 132px;
+}
+
+.footer h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer-elements{
+    margin: 3rem 2rem 1rem -2rem;
+}
+footer-elements h1{
+    font-size: 3rem;
+}
+
+.footer-elements p{
+    font-size: 1.6rem;
+}
+
+
+/* ____________responsive______________ */
+
+@media (max-width:1166px){
+    .right-navbar{
+        width: 69%;
+        
+    }
+}
+
+@media (max-width:1024px){
+    .header{
+        display: none;
+    }
+
+    .navbar-container{
+          display: flex;
+
+    }
+
+    .navbar-container input[type='checkbox']:checked ~ .menu-items{
+        display: block;
+        border: 2px solid black;
+       position: absolute;
+       left: 0px;
+       margin-left: -12px;
+       top: 68px;
+       padding: 70px;
+       width: 50%;
+       background: #555;
+       /* border: 3px solid red; */
+       
+      
+    }
+
+    .navbar-container input[type='checkbox']{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 32px;
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 2px solid red;
+    
+    }
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333333;
+    }
+
+.hamburger-lines{
+
+}
+.navbar-main{
+    order: 2;
+
+}
+.right-navbar{
+    order: 1;
+    display: flex;
+    position: relative;
+}
+
+.left-navbar{
+    top: 1rem;
+}
+.nav-list{
+    justify-content: start;
+    z-index: 12;
+    background: #1f1d1d;
+    
+order: 2;
+
+}
+
+.nav-list a{
+    color: #fff;
+}
+
+.appointment{
+order: 1;
+}
+
+.right-navbar ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50vh;
+    height: 500px;
+    top: 3rem;
+    right: 16rem;
+}
+
+.logo img{
+    width: 85px;
+    height: 78px;
+}
+.text-navbar{
+    top: 16px;
+    left: 76px;
+}
+.text-navbar h1{
+    font-size: 2.3rem;
+}
+.text-navbar p{
+ font-size: 1.2rem;
+}
+.btn{
+    font-size: 1.2rem;
+    position: relative;
+    left: 4.7rem;
+}
+
+}
+
+    
+    
